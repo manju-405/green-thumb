@@ -1,0 +1,115 @@
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+table {
+    width: 100%;
+    border-spacing: 0px;
+    th {
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    td {
+        padding: 8px 2px;
+    }
+    input{
+        width: 100%;
+        height: 40px;
+        padding:0 10px;
+        border: 1px solid transparent;
+        outline: none;
+        text-align: center;
+    }
+    &.iseditview {
+        input {
+            border-color: #000000;
+        }
+    }
+}
+
+.body-data {
+    width: 40% !important;
+    p {
+        font-size: 12px;
+        font-family: sans-serif;
+    }
+}
+
+.search-input {
+    margin-right: 20px;
+    input {
+        height: 100%;
+        width: 300px;
+        padding: 0 10px;
+        outline: none;
+    }
+}
+
+
+
+.btn-actions{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    button {
+        cursor: pointer;
+        height: 30px;
+        padding: 0 20px;
+        outline: none;
+        background-color: transparent;
+        border: 1px solid #6d6565;
+        &:hover {
+            color: white;
+            background-color: green;
+        }
+    }
+    button + button {
+        margin-left: 10px;
+    }
+}
+
+.pagination-sec {
+    display: flex;
+    justify-content: space-between;
+    select {
+        width: 60px;
+    }
+    .pagination-block {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        button {
+            width: 30px;
+            height: 30px;
+            border: none;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: not-allowed;
+            background-color: transparent;
+            opacity: 0.4;
+            padding: 0;
+            &:hover {
+                background-color: #f8f8f8;
+            }
+            &.active {
+                opacity: 1;
+                cursor: pointer;
+            }
+        }
+        p {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 22px;
+            color: #707070;
+            margin: 0 10px;
+            b {
+                color: #292929;
+                font-weight: 700;
+            }
+        }
+    }
+}

@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "greenthumbtask"
+    }
+  },
+  "defaultProject": "greenthumbtask",
+  "cli": {
+    "analytics": "d0ad5f90-aa77-4e98-bba6-3cfb1d704bbe"
+  }
 }
