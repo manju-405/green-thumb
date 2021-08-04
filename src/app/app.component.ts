@@ -18,6 +18,7 @@ export class AppComponent {
   paginationsCount = 0;
   searchData = '';
   isSorted: any;
+  showIcon: boolean;
   constructor(private dataService: DataService){
     this.dataService.getJsonData().subscribe((data:any)=> {
       this.totalCount = data.length;
@@ -69,6 +70,7 @@ export class AppComponent {
   }
   sortMethod(type:string) {
     this.isSorted = !this.isSorted;
+    this.showIcon = true;
     if(type === 'id') {
       if(this.isSorted) {
         this.commentList.sort((a,b) =>{

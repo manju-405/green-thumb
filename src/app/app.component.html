@@ -10,10 +10,18 @@
   </div>
   <table [ngClass]="{'iseditview':isEditEnable}">
     <tr>
-      <th (click)="sortMethod('id')">S.NO</th>
-      <th (click)="sortMethod('name')">NAME</th>
-      <th (click)="sortMethod('email')">EMAIL</th>
-      <th (click)="sortMethod('body')">BODY</th>
+      <th>S.NO
+        <img src="assets/sort.png" alt="" (click)="sortMethod('id')" *ngIf="showIcon">
+      </th>
+      <th>NAME
+        <img src="assets/sort.png" alt="" (click)="sortMethod('name')">
+      </th>
+      <th>EMAIL
+        <img src="assets/sort.png" alt="" (click)="sortMethod('email')">
+      </th>
+      <th>BODY
+        <img src="assets/sort.png" alt="" (click)="sortMethod('body')">
+      </th>
     </tr>
     <tbody>
       <tr *ngFor="let item of commentList">
